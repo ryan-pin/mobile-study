@@ -8,25 +8,52 @@
     tools:context=".TerceiraTela">
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="471dp"
-        android:layout_height="832dp"
-        app:srcCompat="@drawable/tela1__1_"
-        tools:layout_editor_absoluteX="-30dp"
-        tools:layout_editor_absoluteY="-8dp" />
+        android:id="@+id/imageView2"
+        android:layout_width="872dp"
+        android:layout_height="861dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076"
+        app:srcCompat="@drawable/tela1__1_" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="287dp"
         android:layout_height="415dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="156dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pokeinfo" />
+
+    <ImageView
+        android:id="@+id/img_poke"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="252dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.646"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pokemon_e_informa__es" />
 
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="96dp"
+        android:text="Vergil"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -37,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonPrevious"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
