@@ -8,6 +8,7 @@ android {
     namespace = "com.example.pokelistkotlin"
     compileSdk = 35
 
+
     defaultConfig {
         applicationId = "com.example.pokelistkotlin"
         minSdk = 24
