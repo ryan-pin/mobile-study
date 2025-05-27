@@ -32,12 +32,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ListPoke"
+        android:layout_width="243dp"
+        android:layout_height="516dp"
+        android:layout_marginTop="196dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/listagem_de_pokemons"
-        tools:layout_editor_absoluteY="210dp" />
+        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/pokemon_list" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
