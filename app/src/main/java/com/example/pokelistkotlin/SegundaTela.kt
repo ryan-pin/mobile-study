@@ -38,7 +38,7 @@ class SegundaTela : AppCompatActivity() {
 
         val service = retrofit.create(ApiService::class.java)
 
-        val call = service.getPokemonList(100, 0)
+        val call = service.getPokemonList(151, 0)
 
         call.enqueue(object : Callback<PokemonResponse> {
             override fun onResponse(call: Call<PokemonResponse>, response: Response<PokemonResponse>) {
