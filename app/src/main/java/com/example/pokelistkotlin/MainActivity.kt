@@ -21,7 +21,8 @@ class MainActivity : AppCompatActivity() {
         }
         val botao = findViewById<Button>(R.id.bt_listagem)
         botao.setOnClickListener {
-            val intent = Intent(this, TerceiraTela::class.java)
+            val intent = Intent(this, SegundaTela::class.java)
+
             startActivity(intent)
         }
     }

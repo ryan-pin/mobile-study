@@ -52,7 +52,7 @@ class TerceiraTela : AppCompatActivity() {
                 "/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/"
 
 
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint("MissingInflatedId", "WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_terceira_tela)
@@ -62,6 +62,12 @@ class TerceiraTela : AppCompatActivity() {
         btnNext = findViewById(R.id.buttonNext)
         img = findViewById(R.id.img_poke)
         txtPokeName = findViewById(R.id.name_poke)
+
+        val buttonVoltar = findViewById<MaterialButton>(R.id.buttonVoltar)
+        buttonVoltar.setOnClickListener {
+            // simplesmente fecha a TerceiraTela e volta para SegundaTela
+            finish()
+        }
 
         btnBack.setOnClickListener {
             if (pokeNumber == 1) {
